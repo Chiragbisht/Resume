@@ -24,19 +24,6 @@
 \setlength{\columnsep}{0pt}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -61,10 +48,8 @@
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-% Define link color
 \definecolor{linkcolor}{RGB}{0,102,204}
 \hypersetup{
     colorlinks=true,
@@ -72,9 +57,8 @@
     urlcolor=linkcolor
 }
 
-%-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
+\newcommand{\resumeItem}[1]{%
   \item\small{
     {#1 \vspace{-2pt}}
   }
@@ -118,18 +102,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     {\Huge \scshape Chirag Bisht} \\ \vspace{3pt}
     Noida \\ \vspace{3pt}
@@ -139,7 +114,6 @@
     \vspace{-2pt}
 \end{center}
 
-% Removed the Summary heading and kept the content directly
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     Software Engineer with experience in Python, Django, and full-stack web development. Skilled in integrating APIs, implementing Agile methodologies, and deploying containerized applications with Docker.
@@ -147,125 +121,90 @@
 \end{itemize}
 \vspace{-10pt}
 
-
-
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Inderprastha Engineering College}{11/2021 -- 6/2025}
-      {B.Tech in Information Technology}{Sahibabad,UttarPradesh}
+      {Bachelor of Technology in Information Technology}{Sahibabad,UttarPradesh}
   \resumeSubHeadingListEnd
 
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-3pt, parsep=4pt]
-                \item\small Data Structures
-                \item Cybersecurity
-                \item Cloud Computing
-                \item Object Oriented Progg.
-                \item Computer Networks
-                \item Database Management
-                \item Artificial Intelligence
-                \item Computer Architecture
-                
-            \end{itemize}
-        \end{multicols}
-        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Django, SQL, HTML/CSS} \\
-     \textbf{Developer Tools}{: VS Code, Cursor,IDX} \\
-     \textbf{Technologies}{: MongoDB, GitHub, Docker,Prompt Engineering}  }}
+     \textbf{Languages}{: Python, Django, SQL, CSS, Mongodb, Typescript, React} \\
+     \textbf{Developer Tools}{: Github,Docker,Digital Ocean} \\
+     \textbf{Technologies}{: Prompt Engineering, Agentic coding, AI Agents, Prompt Design} \\
+     \textbf{Ai Tools}{: Claude code, Cursor, Windsurf, Lovable, Figma} 
+    }}
  \end{itemize}
  \vspace{-12pt}
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {CISCO Cybersecurity}{05/2024 -- 07/2024}
-      {Intern(virtual)}{}
+      {Easemyexpo}{03/2025 -- Present}
+      {Software Developer (remote)}{}
       \resumeItemListStart
-        \resumeItem{Developed a comprehensive network architecture for a college, connecting various department PCs and lab 
-systems to simulate real-world administrative networks and reducing network latency by 15\% .}
+        \resumeItem{Part of the founding tech team, contributing to architectural decisions and core development strategies.}
+        \resumeItem{Worked on FastAPI backends and MongoDB for building robust APIs with comprehensive data validation.}
+        \resumeItem{Developed frontend using React and Vite to build a lead generation application with modern UI/UX.}
+        \resumeItem{Helped scale the product from 0 to 150 monthly active users (MAU) through performance optimization.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CISCO Cybersecurity}{05/2024 -- 07/2024}
+      {Intern (remote)}{}
+      \resumeItemListStart
+        \resumeItem{Developed a comprehensive network architecture for a college, connecting various department PCs and lab systems to simulate real-world administrative networks and reducing network latency by 15\%.}
         \resumeItem{Implemented firewall configurations and cybersecurity measures that reduced potential security breaches by 25\%.}
-        \resumeItem{Developed a scalable network architecture supporting 50+ devices, enhancing departmental connectivity and 
-simulation accuracy. }
         \resumeItem{Conducted performance testing and troubleshooting to ensure the robustness of routing protocols under load.}
       \resumeItemListEnd
 
-  
-    
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Humanizer} $|$ \emph{\href{https://humanizer-olive.vercel.app/}{Live Preview}}}{01/2025 -- 02/2025}
-          \resumeItemListStart
-            \resumeItem{Developed an AI-driven application using GeminiAPI, and Groq API to detect and rephrase AI-generated 
-content, increasing content naturalness by 80\%. }
-            \resumeItem{Utilized advanced prompt engineering and Sonnet 3.7 to reduce AI hallucinations by 30\% and enhance accuracy. 
-}
-            \resumeItem{Developed an app that improved AI response accuracy by 50\% using advanced optimization techniques }
-            
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{Chat Room} $|$ \emph{\href{https://chatroom-os4ddry5.b4a.run/}{Live Preview}} }{07/2024 -- 09/2024}
-          \resumeItemListStart
-            \resumeItem{ Built a scalable chat room application using Django with fully implemented user authentication.}
-            \resumeItem{Implemented real-time messaging with polling techniques, reducing message latency by 50\%. }
-            \resumeItem{Created visually appealing and responsive front-end designs using Tailwind CSS, with HTML generated through        
-advanced generative AI models for rapid prototyping and development. }
-            \resumeItem{Designed a robust backend architecture with database models to handle up to 50 concurrent users.}
-          \resumeItemListEnd 
-          \vspace{-13pt}
-          \resumeProjectHeading
-          {\textbf{Flappy Bird Game } }{07/2023 -- 11/2023}
-          \resumeItemListStart
-            \resumeItem{Developed an interactive game using Python and Pygame, incorporating advanced collision detection algorithms 
-that enhanced gameplay realism and responsiveness. }
-            \resumeItem{Utilized advanced collision detection algorithms achieving a 90\% user satisfaction rating for precise interactions 
-between the bird, obstacles, and ground. }
-            \resumeItem{Fixed frame rate to 60 for smooth user experience and immersive gameplay}
-          \resumeItemListEnd 
-    \resumeSubHeadingListEnd
+\vspace{-5pt}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{Lead Generation SaaS Tool} $|$ \emph{\href{https://leads.easemyexpo.in/}{Live Preview}}}{05/2025 -- 07/2025 }
+      \resumeItemListStart
+        \resumeItem{Lead generation SaaS tool made core functionality of SaaS tool backend FastAPI, optimised for performance and UX.}
+        \resumeItem{Worked on Vite React frontend for ultra fast frontend building and MongoDB for database management.}
+        \resumeItem{Implemented scalable architecture to handle multiple concurrent users and data processing.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+  \resumeProjectHeading
+      {\textbf{Humanizer} $|$ \emph{\href{https://humanizer-olive.vercel.app/}{Live Preview}}}{01/2025 -- 02/2025}
+      \resumeItemListStart
+        \resumeItem{Developed an AI-driven application using GeminiAPI, and Groq API to detect and rephrase AI-generated content, increasing content naturalness by 80\%.}
+        \resumeItem{Utilized advanced prompt engineering and Sonnet 3.7 to reduce AI hallucinations by 30\% and enhance accuracy.}
+        \resumeItem{Developed an app that improved AI response accuracy by 50\% using advanced optimization techniques.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+  \resumeProjectHeading
+      {\textbf{Chat Room} $|$ \emph{\href{https://chatroom-os4ddry5.b4a.run/}{Live Preview}} }{07/2024 -- 09/2024}
+      \resumeItemListStart
+        \resumeItem{Built a scalable chat room application using Django with fully implemented user authentication.}
+        \resumeItem{Implemented real-time messaging with polling techniques, reducing message latency by 50\%.}
+        \resumeItem{Created responsive front-end designs using Tailwind CSS, with HTML generated through generative AI models.}
+        \resumeItem{Designed backend architecture and models to support 50+ concurrent users.}
+      \resumeItemListEnd 
+\resumeSubHeadingListEnd
 \vspace{-15pt}
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Certifications}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     DSA in Python from GeeksforGeeks $|$ \emph{\href{https://www.geeksforgeeks.org/certificate/3b0f13e03396f2d6eb175d2a0f0a7d3c}{Live Preview}} \\
-     Cybersecurity Essentials by Cisco $|$ \emph{\href{https://www.linkedin.com/in/chiragbisht/details/certifications/1724493812434/single-media-viewer/?profileId=ACoAADkmcikB-Tw6lrnhytASCj9UZzOyYQKePfM}{Live Preview}}\\
-     MongoDB Developer's Toolkit by GeeksforGeeks $|$ \emph{\href{https://www.geeksforgeeks.org/certificate/83da2679f0e0eacf29f89c20f4ff3a1e}{Live Preview}} }}
- \end{itemize}
- \vspace{-16pt}
-
 
 %-----------INVOLVEMENT---------------
 \section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        
-            \resumeItemListStart
-                \resumeItem{Represented university in National Esports Tournament and secured 3rd position.}
-                \resumeItem{Founding member of Esports Club and conducted multiple events.}
-                
-            \resumeItemListEnd
-        
-    \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{Represented university in National Esports Tournament and secured 3rd position.}
+    \resumeItem{Founding member of Esports Club and conducted multiple events.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 \end{document}
